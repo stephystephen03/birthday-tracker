@@ -8,9 +8,23 @@ const App = () => {
       <section className="container">
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
-        <button type="button" className="btn" onClick={() => setPeople([])}>
-          Clear all
-        </button>
+        {people.length != 0 ? (
+          <button
+            type="button"
+            className="btn btn-block"
+            onClick={() => setPeople([])}
+          >
+            Clear all
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="btn btn-block"
+            onClick={() => setPeople(data)}
+          >
+            Undo
+          </button>
+        )}
       </section>
     </main>
   );
