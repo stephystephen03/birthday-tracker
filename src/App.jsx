@@ -8,23 +8,15 @@ const App = () => {
       <section className="container">
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
-        {people.length != 0 ? (
-          <button
-            type="button"
-            className="btn btn-block"
-            onClick={() => setPeople([])}
-          >
-            Clear all
-          </button>
-        ) : (
-          <button
-            type="button"
-            className="btn btn-block"
-            onClick={() => setPeople(data)}
-          >
-            Undo
-          </button>
-        )}
+        <button
+          type="button"
+          className="btn btn-block"
+          onClick={() => {
+            people.length != 0 ? setPeople([]) : setPeople(data);
+          }}
+        >
+          {people.length != 0 ? "Clear all" : "Undo"}
+        </button>
       </section>
     </main>
   );
