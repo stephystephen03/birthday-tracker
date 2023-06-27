@@ -1,3 +1,4 @@
+This project deployed on netlify https://birthday-tracker-react.netlify.app
 
 Overall, the flow of the application should look something like this:
 
