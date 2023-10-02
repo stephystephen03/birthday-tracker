@@ -1,4 +1,4 @@
-This project deployed on netlify https://birthday-tracker-react.netlify.app or in AWS amplify https://main.d2lsozmnjqujbn.amplifyapp.com
+This project deployed on netlify https://birthday-tracker-react.netlify.app
 
 Overall, the flow of the application should look something like this:
 
